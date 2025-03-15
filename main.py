@@ -39,7 +39,7 @@ def main():
                 return
     
         # Update game state with the calculated dt
-        upadatable.update(dt)
+        updatable.update(dt)
     
         # Render the game
         screen.fill("black")
