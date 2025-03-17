@@ -41,6 +41,11 @@ def main():
         # Update game state with the calculated dt
         updatable.update(dt)
     
+        for asteroid in asteroids:
+            if asteroid.collides_with(player):
+                print("Game over!")
+                sys.exit() 
+
         # Render the game
         screen.fill("black")
         
